@@ -4,7 +4,8 @@ import { storage } from '../utils/helpers';
 
 // Create axios instance
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: import.meta.env.VITE_API_URL,
+  withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
   },
