@@ -48,7 +48,7 @@ const TeacherSubmissions = () => {
   const [grading, setGrading] = useState(false);
 
   const baseHost = useMemo(() => {
-    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+    const apiUrl = import.meta.env.VITE_API_URL || 'lms-frontend-xhxq.vercel.app/api';
     return apiUrl.replace(/\/api\/?$/, '');
   }, []);
 

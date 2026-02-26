@@ -120,7 +120,7 @@ const StudentCourseDetail = () => {
     if (!rawUrl) return null;
 
     const apiBase =
-      import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+      import.meta.env.VITE_API_BASE_URL || 'lms-frontend-xhxq.vercel.app/api';
     const apiOrigin = new URL(apiBase).origin; // e.g. http://localhost:5000
 
     try {
